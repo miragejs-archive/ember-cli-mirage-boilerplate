@@ -1,5 +1,6 @@
 export default function(server) {
 
-  server.create('user', { name: 'Yehuda' });
+  let user = server.create('user', { name: 'Yehuda' });
+  server.createList('post', 3, { user });
 
 }
